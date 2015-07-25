@@ -1,0 +1,315 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html, body {
+  font-family: sans-serif;
+  font-style: 100%;
+  background: #fff;
+}
+body {
+  /*使social-icon居上*/
+  padding-top: 0px;
+}
+body a {
+  /*链接效果：延长0.5秒改变链接颜色*/
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+
+  color: gray;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+p { 
+  margin: 0;
+}
+/*sidebar*/
+.sidebar {
+  background: #6ecadc;
+}
+.sidebar h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: #fff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 5px #08c, 1px 1px 0 #68a;
+}
+.sidebar img {
+  width: 60%;
+  border-radius: 50%;
+  margin-left: 1.8em;
+  margin-top: -1em;
+}
+.sidebar img:hover {
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+.details {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+.details h3 {
+  font-weight: 600;
+  font-size: 1em;
+  color: #fff;
+}
+.details p {
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0.7em 0 1em 0;
+}
+address h3 {
+  margin-bottom: 5px;
+}
+address span {
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom:0.3em; 
+}
+
+/*main*/
+.main {
+  padding: 2em 0;
+}
+.content {
+  margin-right: 3em;      
+}
+.social-icon {
+  padding: 0em 1em 0em 2em ;
+}
+.social-icon img {
+  width:25px; 
+  height:25px; 
+}
+.social-icon ul li {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.social-icon ul li a {
+  padding: 0 1em;
+}
+.social-icon ul li a:hover {
+  color: #6ecadc;
+} 
+.company {
+  margin: 2em 0;
+}
+.company h3 {
+  color: #fff;
+  padding: 5px 190px 5px 30px;
+  display: inline-block;
+}
+.skills h3 {
+  color: #fff;
+  padding: 5px 190px 5px 30px;
+  display: inline-block;
+}
+.company-details, .education-details {
+  padding: 1.5em 0 0em 2em;
+}
+.company-details h4, .education-details h4 {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 6px;
+  font-family: sans-serif;
+}
+.company-details h6,.education-details h6 {
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 1.3em;
+}
+.company-details h4 span, .education-details h4 span {
+  color: #999;
+  font-weight: 400;
+  font-size: 0.6em;
+  margin-left: 5px;
+}
+.company-details p, .skills-info p, .education-details p {
+  color: #999;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+.company-descript {
+  color: #999;
+}
+.skills {
+  margin: 2em 0;
+}
+.skills-info, .skils-list {
+  padding: 1.5em 0 0 2em;
+}
+.skills-list h4 {
+  color: #333;
+  font-weight: 600;
+  margin:1em 0 1em 0;
+  display: inline-block;
+}
+.skills-list ul {
+  padding-left: 2em;
+}
+.skills-list ul li {
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+
+}
+.education h3 {
+  background: #999;
+  color: #fff;
+  padding: 5px 190px 5px 30px;
+  display: inline-block;
+}
+h3.color1 {
+  background-color: #6ecadc;
+}
+h3.color2{
+  background:#e9a820;
+}
+h3.color3{
+  background:#3eb991;
+}
+/*footer*/
+.footer {
+  margin: 1em 0 0 2em;
+}
+.copywrite {
+  padding-left: 2em;
+  margin-top: 2em;
+}
+.copyright p {
+  color: #999;
+  font-size: 1em;
+}
+
+/*response*/
+@media (max-width: 1366px){
+  .sidebar h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1024px){
+  .sidebar {
+    padding: 1em 13px;
+    width:18%;
+  }
+  .sidebar h1 {
+    font-size: 1.6em;
+  }
+  .sidebar img {
+    width: 50%;
+    margin-left:1.4em ;
+  }
+  .main {
+    margin-left: 19.666667%;
+    width: 80%;
+  }
+  .social-icon ul li {
+    display: inline-block;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 736px){
+  .sidebar {
+    width: 100%;
+}
+  .main {
+    margin-top: 20em;
+    margin-left: 0;
+    width: 100%;
+  }
+  .sidebar h1 {
+    margin: -1em 0 1em 2.5em;
+    font-size: 2em;
+  }
+  .sidebar_top{
+    background-color: #6ECADC; 
+    width:100%;
+    float:left;
+    margin-top: 1em;
+    margin-left:-3%;
+    margin-right: -48%;
+    height: 300px;
+  }
+  .sidebar img {
+    width: 20%;
+    margin: -1.3em  -2em 0 6em;
+  }
+  .details{
+    margin-top: 1em;
+    background-color: #6ECADC; 
+    width:35%;
+    float:right;
+    height: 300px;
+  }
+  .social-icon ul li {
+    font-size: 1.1em;
+    padding: 0.5em;
+  }
+}
+
+@media (max-width: 375px){  /*手机显示*/
+
+  .sidebar_top {
+    margin-top: 0.9em;
+    margin-left: -1.1em;
+    height: 240px;
+  }
+  .details {
+    height: 238px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.5em;
+    margin: -1em 0 0 1em;
+  }
+  .sidebar img {
+    width: 30%;
+    margin: 1em;
+  }
+  .details h3 {
+    font-size: 0.8em;
+  }
+  .details p {
+    font-weight:normal;
+    font-size: 0.5em;
+    margin: 0.5em 0 1em 0em;
+  }
+  address span {
+    font-size: 0.7em;
+  }
+
+  .social-icon {
+    margin-top: -5em;
+  } 
+
+  .social-icon ul li{
+    font-size: 1em;
+    padding: 0.5em ;
+    text-align: center;
+  }
+  .footer {
+    margin-right: 1em;
+  }
+}
+
+
+
