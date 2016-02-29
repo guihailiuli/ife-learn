@@ -1,0 +1,193 @@
+h1{color: blue;}
+h2{font-size:14px;}
+p{font-size:12px; color:yellow; background-color:black;}
+img{border: solid 2px red;}
+/*css选择器下拉菜单一*/
+div.menu-bar ul ul{
+	display:none;
+}
+div.menu-bar li:hover > ul{
+	display:block;
+}
+/*CSS选择器下拉菜单二*/
+div.menu-bar2 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 90%;
+}
+div.menu-bar2 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	background-color: #ffabf;
+	overflow: visible;
+}
+div.menu-bar2 ul li {
+	display: block;
+    float: left;
+    height: auto;
+    /*menu header's items width*/
+    width: 120px;
+}
+
+div.menu-bar2 li > a, div.menu-bar2 li > a:link, div.menu-bar2 li > a:visited, div.menu-bar2 li > a:active {
+	display: block;
+	padding: 0 0 0 10px;
+	height: 100%;
+	width: 109px;
+	border-right: 1px solid #5d5636;
+	line-height: 30px;
+	font-family: times, serif;
+	font-size: 18px;
+	font-style: italic;
+	text-decoration: none;
+	background-color: #fffabf;
+	color: #5d5636;
+	cursor: pointer;
+}
+div.menu-bar2 li:hover > a {
+	color: #220000;
+	background-color: #eeeabe; 
+}
+div.menu-bar2 ul ul {
+	margin-top: 2px;
+	display: none;
+	position: static;
+	height: auto;
+	/*vertical-menu width*/
+	width: 160px;
+	border: 1px solid #666666;
+	background-color: #dddddd;
+}
+div.menu-bar2 li:hover > ul {
+	display: block;
+}
+div.menu-bar2 ul ul li {
+	position: relative;
+	float: none;
+	height: 28px;
+	width: 100%;
+	border: none;
+
+}
+div.menu-bar2 ul ul li > a, div.menu-bar2 ul ul li > a:link, div.menu-bar2 ul ul li > a:visited, div.menu-bar2 ul ul li > a:active {
+	height: 100%;
+	width: 96%;
+	padding: 0 0 0 4%;
+	line-height: 27px;
+	background-color: transparent;
+	border: none;
+	color: #000000;
+	font-family: georgia, serif;
+	font-size: 14px;
+	font-style: normal;
+} 
+div.menu-bar2 ul ul li > a:hover {
+    background-color: #ccc;
+    color: #f00;
+}
+/*vertical sub-sub-menus*/
+div.menu-bar2 ul ul ul{
+	position: absolute;
+	top: 4px;
+	left: 157px;
+	margin: 0;
+}
+a.menu-nav:after {
+	float: right;
+	margin-right: 8px;
+}
+#parent-div {
+	position: relative;
+	font: bold 200% sans-serif;
+	padding-bottom: 20px;
+}
+#forward, #back {
+	position: absolute;
+	margin: 0px;
+	top: 0px;
+	left: 10px;
+	margin-top: -10px;
+}
+#back {
+	color: red;
+}
+#forward {
+	color: blue;
+}
+#demo-table {
+	font: 100% sans-serif #efe;
+	background-color: #efe;
+	/*border-collapse: collapse;*/
+	empty-cells: show;
+	border: 1px solid #7e7;
+	margin-top: 10px;
+}
+
+#demo-table > caption {
+	text-align: left;
+	font-weight: bold;
+	font-size: 200%;
+	border-bottom: .2em solid #4ca;
+	margin-bottom: .5em;
+}
+#demo-table th, #demo-table td {
+	text-align: right;
+	padding-right: .5em;
+}
+#demo-table th {
+	font-weight: bold;
+	padding-left: .5em;
+}
+/*header*/
+#demo-table > thead > tr:first-child > th {
+	text-align: center;
+	color: blue;
+}
+#demo-table > thead > tr + tr > th {
+	font-style: italic;
+	color: gray;
+
+}
+/*fix size of superscript*/
+#demo-table sup {
+	font-size: 75%;
+}
+/*body*/
+#demo-table table tr th {
+	text-align: left;
+}
+#demo-table td {
+	background-color: #cef;
+	padding: .5em .5em .5em 3em ;
+}
+#demo-table tbody th:after {
+	content: ":";
+}
+/*footer*/
+#demo-table tfoot {
+	font-weight: bold;
+}
+#demo-table tfoot th {
+	color: blue;
+}
+#demo-table tfoot th:after {
+	content: ":";
+}
+#demo-table > tfoot td {
+	color: black;
+}
+#demo-table > tfoot > tr:first-child td {
+	border-top: .2em solid #7e7;
+}
+#test1 {
+	background-color: red;
+	width: 960px;
+}
+
+
