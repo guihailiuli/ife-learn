@@ -24,14 +24,16 @@
 ### 任务完成情况
 
 使用两种方式完成：
-Demo1: [点击这里](http://huanyouchen.github.io/demo/ife/16-spring/first/center-and-position/index-flex.html)
 
-Demo2: [点击这里](http://huanyouchen.github.io/demo/ife/16-spring/first/center-and-position/index.html)
+1. Demo1: [点击这里](http://huanyouchen.github.io/demo/ife/16-spring/first/center-and-position/index-flex.html)
+2. Demo2: [点击这里](http://huanyouchen.github.io/demo/ife/16-spring/first/center-and-position/index.html)
 
-学习总结：
-[css实现居中](http://www.fscwz.com/2016/03/17/css-center-complete-guide/)
+**学习总结：**
 
-[理解css的position属性](http://www.fscwz.com/2016/03/18/understand-css-position/)
+- [css实现居中](http://www.fscwz.com/2016/03/17/css-center-complete-guide/)
+
+- [理解css的position属性](http://www.fscwz.com/2016/03/18/understand-css-position/)
+
 
 我的团队：[NIKE团队](https://github.com/NIKE-FE)
 
