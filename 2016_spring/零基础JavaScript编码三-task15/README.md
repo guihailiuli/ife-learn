@@ -26,17 +26,17 @@
 
 ### 完成情况
 
-Demo: http://codepen.io/guihailiuli/pen/oxpbvW
+#### Demo: http://codepen.io/guihailiuli/pen/oxpbvW
 
-总结：
+#### 总结：
+
+**一：**
 
 对于：```<li>北京空气质量：<b>90</b></li>```用正则匹配'北京'的方法：
 
-方法一：
-```
-cityList.innerHTML.match(/(.*?)空气/)[1];
-```
-(.*?)代表一个分组，.代表任意一个字符，\* 代表前面的那个字符出现任意多次，两个合起来代表匹配任意无限多个字符，?表示使用非贪婪匹配。[1]代表第一个(.\*?)的内容。
+方法一： ```cityList.innerHTML.match(/(.*?)空气/)[1];```
+
+(.*?)代表一个分组，.代表任意一个字符，星号 代表前面的那个字符出现任意多次，两个合起来代表匹配任意无限多个字符，?表示使用非贪婪匹配。[1]代表第一个(.\星号?)的内容。
 
 方法二： li.innerHTML.split("空气")[0];
 
@@ -44,9 +44,10 @@ cityList.innerHTML.match(/(.*?)空气/)[1];
 对于 ```<li>第一名：北京空气质量：<b>90</b></li>```获取'90'的方法：
 
 方法一： cityList[i].getElementsByTagName('b')[0].innerHTML;
+
 方法二： cityList[i].children[0].innerHTML;
 
-
+**二：**
 当需要动态生成li节点，可以使用字符串拼接代替创建li节点。比如：
 ```
 for(var i = 0; i < data.length; i++) {
@@ -65,8 +66,8 @@ for(var i = 0; i < data.length; i++) {
 ul.innerHTML = items;
 ```
 
-
-按照一个个函数来写，使代码更加清晰：
+**三：**
+重视代码结构，按照一个个函数来写，使代码更加清晰：
 ```
 function getData() {
 	//
