@@ -1,0 +1,23 @@
+#container {
+  margin : 20px;   
+}
+#left-in, #left-out, #removeAll {
+    margin-left: 15px;
+}
+
+.numWrap {
+    margin-left: -25px;
+}
+
+#display li {
+    height: 50px;
+    display: inline-block;
+    background-color: red;
+    margin: 10px 20px 0 -5px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
